@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         "https://www.mountain-forecast.com/peaks/Mount-Thielsen/forecasts/2797",
         "https://www.mountain-forecast.com/peaks/Three-Sisters/forecasts/3157",
         "https://www.mountain-forecast.com/peaks/Mount-Washington-3/forecasts/2376",
-        "https://forecast.weather.gov/MapClick.php?lat=44.06&amp;lon=-121.3#.YqNpsXbMKUk",
-        "https://forecast.weather.gov/MapClick.php?lat=44.06&amp;lon=-121.3#.YqNpsXbMKUk"
+        "https://forecast.weather.gov/MapClick.php?lat=44.06&lon=-121.3#.YsZ5b-zMLeo",
+        "https://forecast.weather.gov/"
     )
 
 
@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         names.add("\uD83C\uDF0B Mount Bachelor")
         names.add("\uD83C\uDF0B Broken Top")
         names.add("\uD83C\uDF0B Diamond Peak")
+        names.add("\uD83C\uDF0B Mt Hood")
         names.add("\uD83C\uDF0B Lassen Peak")
         names.add("\uD83C\uDF0B Mount McLoughlin")
         names.add("\uD83C\uDF0B Mt Shasta")
