@@ -53,8 +53,8 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = arrayAdapter
 
         listView.setOnItemClickListener{ parent, view, position, id ->
-            val myItem = parent.getItemAtPosition(position)
-            Toast.makeText(this, myItem.toString() + " " + position, Toast.LENGTH_SHORT).show() // Toast for debugging
+//            val myItem = parent.getItemAtPosition(position)       // For Toast debugging.
+//            Toast.makeText(this, myItem.toString() + " " + position, Toast.LENGTH_SHORT).show() // Toast for debugging.
             if (position != names.size-1) {     // the last item in the array should be the equipment checklist.
                val url = urls[position]
                 val intent = Intent(Intent.ACTION_VIEW)
@@ -62,9 +62,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{
-
-                }
+                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{}
                 startActivity(intent)
             }
         }
