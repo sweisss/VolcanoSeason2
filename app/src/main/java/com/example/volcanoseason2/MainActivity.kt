@@ -55,11 +55,16 @@ class MainActivity : AppCompatActivity() {
         listView.setOnItemClickListener{ parent, view, position, id ->
             val myItem = parent.getItemAtPosition(position)
             Toast.makeText(this, myItem.toString() + " " + position, Toast.LENGTH_SHORT).show() // Toast for debugging
-            val url: String
-            if (position != names.size-1) {
-                url = urls[position]
+            if (position != names.size-1) {     // the last item in the array should be the equipment checklist.
+               val url = urls[position]
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.setData(Uri.parse(url))
+                startActivity(intent)
+            }
+            else{
+                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{
+
+                }
                 startActivity(intent)
             }
         }
