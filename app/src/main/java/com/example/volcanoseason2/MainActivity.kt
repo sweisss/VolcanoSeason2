@@ -54,11 +54,14 @@ class MainActivity : AppCompatActivity() {
 
         listView.setOnItemClickListener{ parent, view, position, id ->
             val myItem = parent.getItemAtPosition(position)
-//            Toast.makeText(this, myItem.toString() + " " + position, Toast.LENGTH_SHORT).show() // Toast for debugging
-            val url = urls.get(position)
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.setData(Uri.parse(url))
-            startActivity(intent)
+            Toast.makeText(this, myItem.toString() + " " + position, Toast.LENGTH_SHORT).show() // Toast for debugging
+            val url: String
+            if (position != names.size-1) {
+                url = urls[position]
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.setData(Uri.parse(url))
+                startActivity(intent)
+            }
         }
 //        fun onItemClick(adapterView: AdapterView, view: View, int: Int, long: Long){
 //            Toast.makeText(MainActivity.this, "Clicked item " + int + " " + arraylist.get(int), Toast.LENGTH_SHORT).show()
