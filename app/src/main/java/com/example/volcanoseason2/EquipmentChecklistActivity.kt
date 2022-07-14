@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class EquipmentChecklistActivity : AppCompatActivity() {
+
+    val header : MutableList<String> = ArrayList()
+    val body : MutableList<String> = ArrayList()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_equipment_checklist)
