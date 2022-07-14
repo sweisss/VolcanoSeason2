@@ -4,7 +4,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 
-class ExpandableListAdapter : BaseExpandableListAdapter {
+class ExpandableListAdapter : BaseExpandableListAdapter() {
     override fun getGroupCount(): Int {
         TODO("Not yet implemented")
     }
