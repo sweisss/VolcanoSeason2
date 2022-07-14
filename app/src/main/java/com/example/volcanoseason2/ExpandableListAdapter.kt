@@ -1,36 +1,37 @@
 package com.example.volcanoseason2
 
+import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 
-class ExpandableListAdapter : BaseExpandableListAdapter() {
+class ExpandableListAdapter(var context: Context, var header: MutableList<String>, var body: MutableList<Any>) : BaseExpandableListAdapter() {
     override fun getGroupCount(): Int {
-        TODO("Not yet implemented")
+        return header.size
     }
 
     override fun getChildrenCount(p0: Int): Int {
-        TODO("Not yet implemented")
+        return body.size    // differs from tutorial
     }
 
     override fun getGroup(p0: Int): Any {
-        TODO("Not yet implemented")
+        return header[p0]
     }
 
     override fun getChild(p0: Int, p1: Int): Any {
-        TODO("Not yet implemented")
+        return body[p1]     // differs from tutorial
     }
 
     override fun getGroupId(p0: Int): Long {
-        TODO("Not yet implemented")
+        return p0.toLong()
     }
 
     override fun getChildId(p0: Int, p1: Int): Long {
-        TODO("Not yet implemented")
+        return p1.toLong()
     }
 
     override fun hasStableIds(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     override fun getGroupView(p0: Int, p1: Boolean, p2: View?, p3: ViewGroup?): View {
@@ -42,6 +43,6 @@ class ExpandableListAdapter : BaseExpandableListAdapter() {
     }
 
     override fun isChildSelectable(p0: Int, p1: Int): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 }
