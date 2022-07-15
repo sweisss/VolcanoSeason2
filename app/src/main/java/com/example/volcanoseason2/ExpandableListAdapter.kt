@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import android.widget.TextView
+import android.widget.Toast
 
 class ExpandableListAdapter(var context: Context, var header: MutableList<String>, var body: MutableList<Any>) : BaseExpandableListAdapter() {
     override fun getGroupCount(): Int {
@@ -44,6 +45,9 @@ class ExpandableListAdapter(var context: Context, var header: MutableList<String
         }
         val cat = convertView?.findViewById<TextView>(R.id.category_heading)
         cat?.text = getGroup(p0) as CharSequence?
+        cat?.setOnClickListener{
+            Toast.makeText(context, getGroup(p0) as CharSequence, Toast.LENGTH_SHORT).show()
+        }
         return convertView
     }
 
@@ -54,7 +58,10 @@ class ExpandableListAdapter(var context: Context, var header: MutableList<String
             convertView = inflater.inflate(R.layout.layout_child, null)
         }
         val cat = convertView?.findViewById<TextView>(R.id.category_heading)
-        cat?.text = getGroup(p0) as CharSequence?
+        cat?.text = getChild(p0, p1) as CharSequence?
+        cat?.setOnClickListener{
+            Toast.makeText(context, getChild(p0, p1) as CharSequence, Toast.LENGTH_SHORT).show()
+        }
         return convertView
     }
 
