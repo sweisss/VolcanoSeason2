@@ -2,6 +2,7 @@ package com.example.volcanoseason2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ExpandableListView
 
 class EquipmentChecklistActivity : AppCompatActivity() {
 
@@ -11,6 +12,8 @@ class EquipmentChecklistActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_equipment_checklist)
+
+        title = "Equipment Checklist"
 
         // populate ArrayLists here (busy work!)
         val longSleeve : MutableList<String> = ArrayList()
@@ -171,6 +174,9 @@ class EquipmentChecklistActivity : AppCompatActivity() {
         header.add("Safety")
         header.add("Extras")
         header.add("Trailhead")
+
+        var expandableListView : ExpandableListView = findViewById(R.id.expandableListView)
+        expandableListView.setAdapter(ExpandableListAdapter(this, header, body))
 
     }
 }

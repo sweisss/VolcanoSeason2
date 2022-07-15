@@ -1,9 +1,11 @@
 package com.example.volcanoseason2
 
 import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
+import android.widget.TextView
 
 class ExpandableListAdapter(var context: Context, var header: MutableList<String>, var body: MutableList<Any>) : BaseExpandableListAdapter() {
     override fun getGroupCount(): Int {
@@ -34,12 +36,26 @@ class ExpandableListAdapter(var context: Context, var header: MutableList<String
         return false
     }
 
-    override fun getGroupView(p0: Int, p1: Boolean, p2: View?, p3: ViewGroup?): View {
-        TODO("Not yet implemented")
+    override fun getGroupView(p0: Int, p1: Boolean, p2: View?, p3: ViewGroup?): View? {
+        var convertView = p2
+        if (convertView == null){
+            val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            convertView = inflater.inflate(R.layout.layout_group, null)
+        }
+        val cat = convertView?.findViewById<TextView>(R.id.category_heading)
+        cat?.text = getGroup(p0) as CharSequence?
+        return convertView
     }
 
-    override fun getChildView(p0: Int, p1: Int, p2: Boolean, p3: View?, p4: ViewGroup?): View {
-        TODO("Not yet implemented")
+    override fun getChildView(p0: Int, p1: Int, p2: Boolean, p3: View?, p4: ViewGroup?): View? {
+        var convertView = p3
+        if (convertView == null){
+            val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            convertView = inflater.inflate(R.layout.layout_child, null)
+        }
+        val cat = convertView?.findViewById<TextView>(R.id.category_heading)
+        cat?.text = getGroup(p0) as CharSequence?
+        return convertView
     }
 
     override fun isChildSelectable(p0: Int, p1: Int): Boolean {

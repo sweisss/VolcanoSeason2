@@ -69,5 +69,6 @@ class MainActivity : AppCompatActivity() {
 //        fun onItemClick(adapterView: AdapterView, view: View, int: Int, long: Long){
 //            Toast.makeText(MainActivity.this, "Clicked item " + int + " " + arraylist.get(int), Toast.LENGTH_SHORT).show()
 //        }
+
     }
 }
