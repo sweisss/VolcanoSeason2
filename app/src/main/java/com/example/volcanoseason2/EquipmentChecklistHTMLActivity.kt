@@ -9,8 +9,8 @@ class EquipmentChecklistHTMLActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_equipment_checklist_htmlactivity2)
 
-//        val webview = findViewById<WebView>(R.id.web)
-//        webview.loadUrl("file:///android_asset/EquipmentChecklist.html")
+        val webview = findViewById<WebView>(R.id.web)
+        webview.loadUrl("file:///android_asset/EquipmentChecklist.html")
 
 
     }
