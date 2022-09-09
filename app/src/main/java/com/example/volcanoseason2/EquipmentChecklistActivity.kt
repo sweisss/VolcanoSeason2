@@ -25,7 +25,7 @@ class EquipmentChecklistActivity : AppCompatActivity() {
         baseLayers.add("Compression Socks")
         baseLayers.add("Compression Leggings")
         baseLayers.add("Synthetic T-shirt")
-        baseLayers.add(longSleeve)  // will need to figure out how to get the String name here
+//        baseLayers.add(longSleeve)  // will need to figure out how to get the String name here
 
         val midLayers : MutableList<String> = ArrayList()
         midLayers.add("Blue Vest")
@@ -47,8 +47,8 @@ class EquipmentChecklistActivity : AppCompatActivity() {
         jackets.add("Down Parka")
 
         val shellsAndOuterware : MutableList<Any> = ArrayList()
-        shellsAndOuterware.add(pants)
-        shellsAndOuterware.add(jackets)
+//        shellsAndOuterware.add(pants)
+//        shellsAndOuterware.add(jackets)
 
         val headware : MutableList<String> = ArrayList()
         headware.add("Beanie")
@@ -83,7 +83,7 @@ class EquipmentChecklistActivity : AppCompatActivity() {
         gear.add("Skin Gloves")
         gear.add("Ice Axe")
         gear.add("Ski Crampons")
-        gear.add(avyGear)
+//        gear.add(avyGear)
         gear.add("Ski Straps")
         gear.add("Radios (both of them")
         gear.add("Leatherman")
@@ -117,15 +117,15 @@ class EquipmentChecklistActivity : AppCompatActivity() {
 
         val safety : MutableList<Any> = ArrayList()
         safety.add("First Aid Kit")
-        safety.add(sunscreenKit)
-        safety.add(toiletriesKit)
-        safety.add(electronics)
-        safety.add(skiWallet)
+//        safety.add(sunscreenKit)
+//        safety.add(toiletriesKit)
+//        safety.add(electronics)
+//        safety.add(skiWallet)
         safety.add("Rescue Knife")
         safety.add("Firebiner")
         safety.add("Map/Compass")
         safety.add("Sam Splint")
-        safety.add(foodAndWater)
+//        safety.add(foodAndWater)
 
         val extras : MutableList<String> = ArrayList()
         extras.add("Binoculars")
@@ -144,7 +144,7 @@ class EquipmentChecklistActivity : AppCompatActivity() {
         camping.add("Slippers")
 
         val trailhead : MutableList<Any> = ArrayList()
-        trailhead.add(camping)
+//        trailhead.add(camping)
         trailhead.add("Sandals")
         trailhead.add("Fresh Clothing")
         trailhead.add("Cooler")
@@ -176,7 +176,7 @@ class EquipmentChecklistActivity : AppCompatActivity() {
         header.add("Trailhead")
 
         var expandableListView : ExpandableListView = findViewById(R.id.expandableListView)
-        expandableListView.setAdapter(ExpandableListAdapter(this, header, body))
+        expandableListView.setAdapter(ExpandableListAdapter(this, expandableListView, header, body))
 
     }
 }
