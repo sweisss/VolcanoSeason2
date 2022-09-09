@@ -70,8 +70,8 @@ class MainActivity : AppCompatActivity() {
 //                intent.setData(Uri.parse(url))
 //                startActivity(intent)
                 //try to pull up html checklist in a seperate activity
-//                val intent = Intent(this, checklistactivity::class.java).apply {  }
-//                startActivity(intent)
+                val intent = Intent(this, EquipmentChecklistHTMLActivity::class.java).apply {  }
+                startActivity(intent)
             }
         }
 //        fun onItemClick(adapterView: AdapterView, view: View, int: Int, long: Long){
