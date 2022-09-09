@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!-- this section lifted from the tutorial https://www.youtube.com/watch?v=UTbXeBNIAwI -->
+        <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowActionBar">false</item>
+            <item name="android:windowFullScreen">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+        </style>
     </style>
 </resources>
