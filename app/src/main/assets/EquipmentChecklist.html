@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body {
+		line-height: 1.5;
+		font-size: 3em;
+		margin-left: 40px;
+	}
+	h3 { margin-bottom: 5px; }
+	input {
+		width: 40px;
+		height: 40px;
+	}
+	#reset {
+		width: 250px;
+		height: 100px;
+		font-size: 1em;
+	}
+	input[type=checkbox]:checked + label {
+		text-decoration: line-through;
+	}
+	.indent { margin-left: 80px; }
+</style>
+<body>
+
+<h1>Volcano Season Checklist</h1>
+
+<h3>Base Layers</h3>
+<form action="mailto:sweisss@gmail.com" method="POST">
+    <input type="checkbox" id="boxer_briefs">
+    <label for="boxer_briefs" >Boxer Briefs</label><br>
+    <input type="checkbox" id="compression_socks">
+    <label for="compression_socks">Compression socks</label><br>
+    <input type="checkbox" id="compression_leggings">
+    <label for="compression_leggings">Compression leggings</label><br>
+    <input type="checkbox" id="synthetic_shirt">
+    <label for="synthetic_shirt">Synthetic t-shirt</label><br>
+    <input type="checkbox" id="long_sleeve">
+    <label for="long_sleeve">Long sleeve</label><br>
+    <input type="checkbox" class="indent" id="sun_hoodie">
+    <label for="sun_hoodie">Sun hoodie</label><br>
+    <input type="checkbox" class="indent" id="blue_hoodie">
+    <label for="blue_hoodie">Blue hoodie (if cold)</label><br>
+    <h3>Mid Layers</h3>
+    <input type="checkbox" id="blue_vest">
+    <label for="blue_vest">Blue Vest</label><br>
+    <input type="checkbox" id="down_vest">
+    <label for="down_vest">Down Vest</label><br>
+    <input type="checkbox" id="softshell">
+    <label for="softshell">Softshell</label><br>
+    <h3>Shells/Outerware</h3>
+    <input type="checkbox" id="pants">
+    <label for="pants">Pants</label><br>
+    <input type="checkbox" class="indent" id="softshell2">
+    <label for="softshell2">Softshell</label><br>
+    <input type="checkbox" class="indent" id="hiking_pants">
+    <label for="hiking_pants">Hiking (if hot)</label><br>
+    <input type="checkbox" class="indent" id="belt">
+    <label for="belt">Belt</label><br>
+    <input type="checkbox" class="indent" id="goretex_pants">
+    <label for="goretex_pants">GoreTex (if snow/cold)</label><br>
+    <input type="checkbox" class="indent" id="rain_shell">
+    <label for="rain_shell">Rain shell (if rain)</label><br>
+    <input type="checkbox" id="jackets">
+    <label for="jackets">Jackets</label><br>
+    <input type="checkbox" class="indent" id="windbreaker">
+    <label for="windbreaker">Windbreaker</label><br>
+    <input type="checkbox" class="indent" id="rain_shell2">
+    <label for="rain_shell2">Rain shell (if rain)</label><br>
+    <input type="checkbox" class="indent" id="goretex_jacket">
+    <label for="goretex_jacket">GoreTex (if snow/cold)</label><br>
+    <input type="checkbox" id="down_parka">
+    <label for="down_parka">Down Parka</label><br>
+    <h3>Headware</h3>
+    <input type="checkbox" id="beanie">
+    <label for="beanie">Beanie</label><br>
+    <input type="checkbox" id="sun_hat">
+    <label for="sun_hat">Sun hat</label><br>
+    <input type="checkbox" id="buff">
+    <label for="buff">Buff</label><br>
+    <input type="checkbox" id="helmet">
+    <label for="helmet">Helmet</label><br>
+    <input type="checkbox" id="headlamp">
+    <label for="headlamp">Headlamp</label><br>
+    <input type="checkbox" id="low_light">
+    <label for="low_light">Low-light sunglasses</label><br>
+    <input type="checkbox" id="glacier_glasses">
+    <label for="glacier_glasses">Glacier sunglasses</label><br>
+    <input type="checkbox" id="goggles">
+    <label for="goggles">Goggles</label><br>
+    <h3>Feet</h3>
+    <input type="checkbox" id="ski_boots">
+    <label for="ski_boots">Ski boots</label><br>
+    <input type="checkbox" id="approach_shoes">
+    <label for="approach_shoes">Approach shoes</label><br>
+    <input type="checkbox" id="boot_crampons">
+    <label for="boot_crampons">Boot crampons</label><br>
+    <input type="checkbox" id="yak_tracks">
+    <label for="yak_tracks">Yak Traks</label><br>
+    <h3>Hands</h3>
+    <input type="checkbox" id="hydrahyde">
+    <label for="hydrahyde">Hydrahyde</label><br>
+    <input type="checkbox" id="liners">
+    <label for="liners">Liners (2 pairs)</label><br>
+    <input type="checkbox" id="mittens">
+    <label for="mittens">Mittens</label><br>
+    <h3>Gear</h3>
+    <input type="checkbox" id="skis">
+    <label for="skis">Skis (waxed and scraped)</label><br>
+    <input type="checkbox" id="poles">
+    <label for="poles">Poles</label><br>
+    <input type="checkbox" id="skins">
+    <label for="skins">Skins</label><br>
+    <input type="checkbox" id="skin_gloves">
+    <label for="skin_gloves">Skin Gloves</label><br>
+    <input type="checkbox" id="ice_axe">
+    <label for="ice_axe">Ice Axe</label><br>
+    <input type="checkbox" id="ski_crapmons">
+    <label for="ski_crapmons">Ski Crampons </label><br>
+    <input type="checkbox" id="avy_gear">
+    <label for="avy_gear">Avy Gear</label><br>
+    <input type="checkbox" class="indent" id="beacon">
+    <label for="beacon">Beacon</label><br>
+    <input type="checkbox" class="indent" id="shovel">
+    <label for="shovel">Shovel</label><br>
+    <input type="checkbox" class="indent" id="probe">
+    <label for="probe">Probe</label><br>
+    <input type="checkbox" id="ski_straps">
+    <label for="ski_straps">Ski straps</label><br>
+    <input type="checkbox" id="radios">
+    <label for="radios">Radios</label><br>
+    <input type="checkbox" id="leatherman">
+    <label for="leatherman">Leatherman</label><br>
+    <input type="checkbox" id="carabiners">
+    <label for="carabiners">Carabiners</label><br>
+    <h3>Safety</h3>
+    <input type="checkbox" id="first_aid">
+    <label for="first_aid">First Aid kit</label><br>
+    <input type="checkbox" id="sunscreen_kit">
+    <label for="sunscreen_kit">Sunscreen kit</label><br>
+    <input type="checkbox" class="indent" id="sunscreen">
+    <label for="sunscreen">Sunscreen</label><br>
+    <input type="checkbox" class="indent" id="chapstick">
+    <label for="chapstick">Chapstick</label><br>
+    <input type="checkbox" class="indent" id="towel">
+    <label for="towel">Towel</label><br>
+    <input type="checkbox" id="toiletries">
+    <label for="toiletries">Toiletries kit</label><br>
+    <input type="checkbox" class="indent" id="bluebag">
+    <label for="bluebag">Blue Bag/Wag Bag</label><br>
+    <input type="checkbox" class="indent" id="hand_sanitizer">
+    <label for="hand_sanitizer">Hand sanitizer</label><br>
+    <input type="checkbox" id="powerbank">
+    <label for="powerbank">Powerbank</label><br>
+    <input type="checkbox" id="aa">
+    <label for="aa">4 AA batteries</label><br>
+    <input type="checkbox" id="aaa">
+    <label for="aaa">4 AAA batteries</label><br>
+    <input type="checkbox" id="ski_wallet">
+    <label for="ski_wallet">Ski wallet</label><br>
+    <input type="checkbox" class="indent", id="ID">
+    <label for="ID">ID</label><br>
+    <input type="checkbox" class="indent" id="CC">
+    <label for="CC">Credit Cart</label><br>
+    <input type="checkbox" class="indent" id="health_insurance">
+    <label for="health_insurance">Health Insurance card</label><br>
+    <input type="checkbox" class="indent" id="cash">
+    <label for="cash">Cash</label><br>
+    <input type="checkbox" id="rescue_knife">
+    <label for="rescue_knife">Rescue knife</label><br>
+    <input type="checkbox" id="firebiner">
+    <label for="firebiner">Firebiner</label><br>
+    <input type="checkbox" id="compass">
+    <label for="compass">Map/Compass</label><br>
+    <input type="checkbox" id="sam_splint">
+    <label for="sam_splint">Sam Splint</label><br>
+    <input type="checkbox" id="food">
+    <label for="food">Food/Water</label><br>
+    <input type="checkbox" class="indent" id="shot_blocks">
+    <label for="shot_blocks">Shot Blocks</label><br>
+    <input type="checkbox" class="indent" id="sandwich">
+    <label for="sandwich">Sandwich/jerkey</label><br>
+    <input type="checkbox" class="indent" id="hydrapack">
+    <label for="hydrapack">Extra 1/2 liter Hydrapack</label><br>
+    <h3>Extras</h3>
+    <input type="checkbox" id="shorts">
+    <label for="shorts">Shorts</label><br>
+    <input type="checkbox" id="binoculars">
+    <label for="binoculars">Binoculars</label><br>
+    <input type="checkbox" id="inclinometer">
+    <label for="inclinometer">Inclinometer</label><br>
+    <input type="checkbox" id="summit_beer">
+    <label for="summit_beer">Summit Beer</label><br>
+    <input type="checkbox" id="food_wraps">
+    <label for="food_wraps">Food wraps</label><br>
+    <input type="checkbox" id="trash_bag">
+    <label for="trash_bag">Trash bag</label><br>
+    <h3>Car Camping</h3>
+    <input type="checkbox" id="car_jacket">
+    <label for="car_jacket">Car Jacket</label><br>
+    <input type="checkbox" id="headlamp2">
+    <label for="headlamp2">Extra headlamp</label><br>
+    <input type="checkbox" id="sleeping_bag">
+    <label for="sleeping_bag">Sleeping bag</label><br>
+    <input type="checkbox" id="sleeping_pad">
+    <label for="sleeping_pad">Sleeping pad</label><br>
+    <input type="checkbox" id="hammock">
+    <label for="hammock">Hammock</label><br>
+    <input type="checkbox" id="tent">
+    <label for="tent">Tent</label><br>
+    <input type="checkbox" id="pjs">
+    <label for="pjs">PJs</label><br>
+    <input type="checkbox" id="pillow">
+    <label for="pillow">Pillow</label><br>
+    <input type="checkbox" id="clothes">
+    <label for="clothes">Fresh Clothes</label><br>
+    <input type="checkbox" id="sandals">
+    <label for="sandals">Sandals</label><br>
+    <input type="checkbox" id="slippers">
+    <label for="slippers">Slippers</label><br>
+    <input type="checkbox" id="cooler">
+    <label for="cooler">Cooler</label><br>
+    <input type="checkbox" class="indent" id="hydration1">
+    <label for="hydration1">Green Liquid IV</label><br>
+    <input type="checkbox" class="indent" id="hydration2">
+    <label for="hydration2">Blue Liquid IV</label><br>
+    <input type="checkbox" class="indent" id="beer">
+    <label for="beer">Beer</label><br>
+    <input type="checkbox" class="indent" id="water">
+    <label for="water">Water</label><br>
+    <input type="checkbox" id="chairs">
+    <label for="chairs">Folding chairs</label><br>
+    <input type="checkbox" id="shotski">
+    <label for="shotski">Shotski</label><br><br>
+    <input type="reset" id="reset" value="Reset List"><br><br>
+</form>
+
+</body>
+
+<footer>
+    <br>
+    &copy; Seth Weiss, 2022
+    <br>
+</footer>
+</html>
