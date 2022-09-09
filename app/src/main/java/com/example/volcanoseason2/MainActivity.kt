@@ -64,10 +64,13 @@ class MainActivity : AppCompatActivity() {
             else{
 //                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{}
 //                startActivity(intent)
-                // try to pull up checklist html instead of expandable list
-                val url = "EquipmentChecklist.html"
-                val intent = Intent(Intent.ACTION_VIEW)
-                intent.setData(Uri.parse(url))
+                // try to pull up checklist html instead of expandable list..this section did not work
+//                val url = "file:///android_asset/EquipmentChecklist.html"
+//                val intent = Intent(Intent.ACTION_VIEW)
+//                intent.setData(Uri.parse(url))
+//                startActivity(intent)
+                //try to pull up html checklist in a seperate activity
+                val intent = Intent(this, EquipmentChecklistHTMLActivity::class.java).apply {  }
                 startActivity(intent)
             }
         }
