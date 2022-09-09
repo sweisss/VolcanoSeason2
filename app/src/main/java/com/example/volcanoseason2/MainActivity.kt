@@ -62,7 +62,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{}
+//                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{}
+//                startActivity(intent)
+                // try to pull up checklist html instead of expandable list
+                val url = "EquipmentChecklist.html"
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.setData(Uri.parse(url))
                 startActivity(intent)
             }
         }

@@ -12,9 +12,9 @@
         android:layout_height="match_parent" />
 
     <!--WebView might not work inside RelativeLayout, but let's try-->
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/myWebView" />
+<!--    <WebView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/myWebView" />-->
 
 </RelativeLayout>
