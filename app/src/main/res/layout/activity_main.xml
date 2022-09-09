@@ -12,15 +12,16 @@
         android:layout_height="match_parent" />
 
     <!--WebView might not work inside RelativeLayout, but let's try-->
+    <!--Actually, it doesn't belong in activity_main.xml at all...-->
 <!--    <WebView-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
 <!--        android:id="@+id/myWebView" />-->
-    <WebView
-        android:id="@+id/web"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+<!--    <WebView-->
+<!--        android:id="@+id/web"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout_editor_absoluteX="8dp"-->
+<!--        tools:layout_editor_absoluteY="8dp" />-->
 
 </RelativeLayout>

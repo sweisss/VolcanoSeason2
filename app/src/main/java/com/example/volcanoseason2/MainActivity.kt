@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 intent.setData(Uri.parse(url))
                 startActivity(intent)
             }
-            else{
+            else if (position == names.size-1){
 //                val intent = Intent(this, EquipmentChecklistActivity::class.java).apply{}
 //                startActivity(intent)
                 // try to pull up checklist html instead of expandable list..this section did not work
