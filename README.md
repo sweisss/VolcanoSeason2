@@ -1,4 +1,7 @@
 # VolcanoSeason2
-Based on the pseudo-app VolcanoSeason (another repo on my account), this app provides a no-frills list of links to weather forcast for mountains I frequently ski in the Spring. It also incorporates the equipment checklist
+Based on the pseudo-app [VolcanoSeason](https://github.com/sweisss/VolcanoSeason), this app provides a no-frills list of links to weather forcast for mountains I frequently ski in the Spring.
+It also incorporates the equipment checklist. 
 
-The next step (when I eventally have the time to finish it) is to incorporate an add/remove feature to the links list and get the checklist to retain the checked status when the app is closed. 
+This project is the result of self learning from YouTube and various online tutorials. 
+
+After taking a formal class on mobile development, a new variation of this app is being developed in the [VolcanoSeason3](https://github.com/sweisss/VolcanoSeason3) repo. 
